@@ -1,0 +1,12 @@
+agents:
+  openai_managed_agent:
+    # Public middleware route ID; clients never submit the provider's Agent ID.
+    agent_id: openai_managed_agent
+    backend: openai_managed
+    remote_agent_id: agent_6af49ef9ba888191a588f116a3e05a6e
+    # Must exactly match the saved Agent's model and have an active rate-card entry.
+    model: gpt-6-luna
+    region: global
+    minimum_balance_nanos: 50000000
+    streaming_enabled: true
+    persistence_enabled: true
